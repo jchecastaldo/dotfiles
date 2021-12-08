@@ -1,0 +1,25 @@
+#!/usr/local/bin/bash
+
+alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
+alias te='open -a textedit'                 # te:           Opens file in textedit
+alias ll='ls -FGlAhp'                       # ll:           Preferred 'ls' implementation
+alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
+cd() { builtin cd "$@"; ll; }               # cd:           Always list directory contents upon 'cd'
+alias so='source ~/.bash_profile'           # so:           reloads bash profile
+alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
+alias cp='cp -iv'                           # cp:           Preferred 'cp' implementation
+alias mv='mv -iv'                           # mv:           Preferred 'mv' implementation
+alias mkdir='mkdir -pv'                     # mkdir:        Preferred 'mkdir' implementation
+alias sz='du -csh * | sort -h'              # sz:           Determine size of all files in dir and order by size
+alias sudo='sudo '                          # sudo:         Enable aliases to be sudo’ed
+mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
+trash () { command mv "$@" ~/.Trash ; }     # trash:        Moves a file to the MacOS trash
+ql() { qlmanage -p "$*" >& /dev/null; }     # ql:           Opens any file in MacOS Quicklook Preview
+gdir() {                                    # gdir:         Find file using gfind and cd to that directory
+ cd "$(dirname "$(mdfind -onlyin ~/Google_Drive/ -name $1 | head -1)")"
+ }
+
+#login to seawulf
+alias seawulf='ssh -X cchecastaldo@login.seawulf.stonybrook.edu'
+
+
