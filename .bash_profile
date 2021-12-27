@@ -8,6 +8,7 @@
 # * ~/.aliases can be used to set aliases
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 
 source ~/.bash_prompt
 source ~/.exports
