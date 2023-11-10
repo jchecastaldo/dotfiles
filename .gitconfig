@@ -3,4 +3,8 @@
 
 [user]
 	name = Christian Che-Castaldo
-	email = christian.che-castaldo@stonybrook.edu
+	email = checastaldo@wisc.edu
+
+[pull]
+	ff = only
+
