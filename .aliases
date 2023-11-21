@@ -1,6 +1,5 @@
 #!/usr/local/bin/bash
 
-alias yt="yt-dlp -o '%(title)s.%(ext)s'"    					# yt:           Download youtube video using yt-dlp
 alias cic='set completion-ignore-case On'   					# cic:          Make tab-completion case-insensitive
 alias te='open -a textedit'                 					# te:           Opens file in textedit
 alias ll='ls -FGlAhp'                       					# ll:           Preferred 'ls' implementation
