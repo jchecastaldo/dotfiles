@@ -20,8 +20,4 @@ gdir() {                                    					# gdir:         Find file using
  cd "$(dirname "$(mdfind -onlyin ~/Google_Drive/ -name $1 | head -1)")"
  }
 
-#login to seawulf
-alias seawulf='ssh -X cchecastaldo@login.seawulf.stonybrook.edu'
-alias milan='ssh -X cchecastaldo@milan.seawulf.stonybrook.edu'
-
 
